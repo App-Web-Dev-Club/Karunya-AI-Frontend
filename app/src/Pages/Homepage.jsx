@@ -1,6 +1,8 @@
 import React from 'react';
 import './Homepage.css';
 import Navbar from '../components/NavigationBar'; 
+import { FiPhone } from "react-icons/fi";
+
 
 
 function Homepage() {
@@ -24,11 +26,25 @@ function Homepage() {
             </button>
           </div>
           <div className='wc-contact'>
+            <div className='phone-img'>
+            <FiPhone />
+            </div>
             Contact Us
           </div>
         </div>
+      
 
     </div>
+    <div className='images'>
+  <div className='images-column'>
+    <img src='/src/assets/1img.png' alt='Image 1' />
+    <img src='/src/assets/3img.png' alt='Image 3' />
+  </div>
+  <div className='images-column'>
+    <img src='/src/assets/2img.png' alt='Image 2' />
+    <img src='/src/assets/4img.png' alt='Image 4' />
+  </div>
+</div>
     </div>
 );
 }
