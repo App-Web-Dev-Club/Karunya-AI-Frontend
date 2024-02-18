@@ -32,9 +32,22 @@
   background: linear-gradient(to right, #1A5F7C, #771B80);
   display: flex;
   flex-direction: column; 
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  transition: box-shadow 0.2s ease-in-out;
   position: relative;
+}
+
+.welcome-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px; 
+  background: radial-gradient(circle at 100% 100%, rgba(26, 95, 124, 0.5), rgba(119, 27, 128, 0.5));
+  z-index: -1; 
+  filter: blur(50px);
+  box-shadow: 0 0 50px rgba(26, 95, 124, 0.7), 0 0 60px rgba(119, 27, 128, 0.7);
+  filter: drop-shadow(0 0 70px #1A5F7C), drop-shadow(0 0 70px #771B80);
 }
 
 .wc-top {
@@ -108,13 +121,9 @@
   width: 180px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  transition: box-shadow 0.2s ease-in-out;
+  
 }
 
-.images img:hover { 
-  box-shadow: 0 0 20px rgba(66, 118, 197, 0.7);
-}
 
 .images { 
   display: flex; 
