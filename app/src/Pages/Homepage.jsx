@@ -3,8 +3,6 @@ import './Homepage.css';
 import Navbar from '../components/NavigationBar'; 
 import { FiPhone } from "react-icons/fi";
 
-
-
 function Homepage() {
   return (
     <div className='body'>
@@ -13,9 +11,10 @@ function Homepage() {
         <div className='wc-top'>
             • Welcome to the AI Era
         </div>
-        <div className='wc-title'>
-            <h1>Lorem Ipsum Dolor</h1>
+        <div className='wc-title glitch-text' data-text="Karunya AI" title='Karunya AI'>
+          <h1>Karunya AI</h1>
         </div>
+
         <div className='wc-text'>
             Education,Research and Open-source
         </div>
@@ -26,10 +25,12 @@ function Homepage() {
             </button>
           </div>
           <div className='wc-contact'>
-            <div className='phone-img'>
-            <FiPhone />
-            </div>
-            Contact Us
+            <a href="mailto:your-email@example.com" className='contact-link'>
+              <div className='phone-img'>
+                <FiPhone />
+              </div>
+              Contact Us
+            </a>
           </div>
         </div>
       
